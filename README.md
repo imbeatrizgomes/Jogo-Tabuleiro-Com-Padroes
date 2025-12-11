@@ -1,0 +1,1 @@
+Jogo de Tabuleiro com padrões Strategy, Factory, Singleton, Facade.
