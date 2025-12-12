@@ -1,8 +1,12 @@
 package jogadores;
 
 public class JogadorFactory {
-
-    public static Jogador criarJogador(String nome, CorJogador cor, int tipo) {
+	
+	private JogadorFactory() {
+		
+	}
+    
+	public static Jogador criarJogador(String nome, CorJogador cor, int tipo) {
         switch (tipo) {
             case 1: return new JogadorNormal(nome, cor);
             case 2: return new JogadorComSorte(nome, cor);
@@ -11,4 +15,3 @@ public class JogadorFactory {
         }
     }
 }
-
