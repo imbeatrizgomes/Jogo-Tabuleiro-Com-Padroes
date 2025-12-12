@@ -21,7 +21,7 @@ public abstract class Jogador {
     //Controle de compra por turno
     protected boolean comprouNoTurno = false;
     
-    public Jogador(String nome, CorJogador cor) {
+    protected Jogador(String nome, CorJogador cor) {
         this.nome = nome.substring(0,1).toUpperCase() + nome.substring(1).toLowerCase();
         this.cor = cor;
         this.posicao = 0;
