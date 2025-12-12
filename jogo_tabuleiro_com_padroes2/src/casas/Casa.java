@@ -3,10 +3,11 @@ package casas;
 import jogadores.Jogador;
 
 public abstract class Casa {
-    protected int numero;
+    
+	protected int numero;
     protected RegraCasa regra;
 
-    public Casa(int numero, RegraCasa regra) {
+    protected Casa(int numero, RegraCasa regra) {
         this.numero = numero;
         this.regra = regra;
     }
@@ -19,4 +20,3 @@ public abstract class Casa {
         regra.aplicar(jogador);
     }
 }
-
