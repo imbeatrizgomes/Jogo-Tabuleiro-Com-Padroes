@@ -1,7 +1,6 @@
 package jogadores;
 
 public enum CorJogador {
-    
 	AZUL,
     LARANJA,
     MARROM,
