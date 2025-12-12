@@ -5,9 +5,10 @@ import jogadores.Jogador;
 
 public class Loja {
 
+    private static final String MSG_MOEDAS_INSUFICIENTES = "Moedas insuficientes.";
+
     public static void exibirLoja(Jogador jogador, Scanner sc) {
 
-        //Serve para caso o jogador compre na lojinha o item reverso
         if (jogador.isComprouNoTurno()) {
             System.out.println("\nVocê já comprou neste turno! Não pode abrir a lojinha agora.");
             return;
@@ -35,7 +36,7 @@ public class Loja {
                     jogador.setComprouNoTurno(true);
                     System.out.println("Item 'Sair da Prisão' comprado!");
                 } else {
-                    System.out.println("Moedas insuficientes.");
+                    System.out.println(MSG_MOEDAS_INSUFICIENTES);
                 }
                 break;
 
@@ -46,7 +47,7 @@ public class Loja {
                     jogador.setComprouNoTurno(true);
                     System.out.println("Item 'Modo Turbo' comprado!");
                 } else {
-                    System.out.println("Moedas insuficientes.");
+                    System.out.println(MSG_MOEDAS_INSUFICIENTES);
                 }
                 break;
 
@@ -57,7 +58,7 @@ public class Loja {
                     jogador.setComprouNoTurno(true);
                     System.out.println("Imunidade a casa Reversa comprada!");
                 } else {
-                    System.out.println("Moedas insuficientes.");
+                    System.out.println(MSG_MOEDAS_INSUFICIENTES);
                 }
                 break;
 
@@ -68,7 +69,7 @@ public class Loja {
                     jogador.setComprouNoTurno(true);
                     System.out.println("Item 'Dado da Sorte' comprado!");
                 } else {
-                    System.out.println("Moedas insuficientes.");
+                    System.out.println(MSG_MOEDAS_INSUFICIENTES);
                 }
                 break;
 
