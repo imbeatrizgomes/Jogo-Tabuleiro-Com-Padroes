@@ -100,8 +100,9 @@ public class Tabuleiro {
             try {
                 int n = Integer.parseInt(sc.nextLine());
                 if (n >= 1 && n <= 3) return n;
-            } catch (Exception ignored) {}
+            } catch (Exception ignored) {
             System.out.print("Tipo inválido! Digite 1, 2 ou 3: ");
+            }
         }
     }
 
