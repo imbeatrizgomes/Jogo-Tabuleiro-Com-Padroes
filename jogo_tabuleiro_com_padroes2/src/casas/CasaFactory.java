@@ -1,6 +1,10 @@
 package casas;
 
 public class CasaFactory {
+	
+	private CasaFactory() {
+		
+	}
 
     public static Casa criarCasa(int numero, String tipo) {
 
